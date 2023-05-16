@@ -90,13 +90,13 @@ a {
 }
 
 .burger-btn__header.open-menu::before {
-    transform: rotate(38deg);
+    transform: rotate(45deg);
     top: 8px;
     transition: 0.4s;
 }
 
 .burger-btn__header.open-menu::after {
-    transform: rotate(-38deg);
+    transform: rotate(-45deg);
     top: 8px;
     transition: 0.4s;
 }
