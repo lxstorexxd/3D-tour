@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3D Tour</title>
+    <noscript>Прости, твой браузер не поддерживает JavaScript ☹️</noscript>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,11 +14,16 @@
     <header class="header">
         <a class="header__logo">Новострой</a>
         <nav class="nav__bar">
-            <a href="#">Главная</a>
-            <a href="#">Новости</a>
-            <a href="#">Квартиры</a>
-            <a href="#" class="active">3D экскурсия</a>
+            <div class="ModalWindow">
+                <a href="#">Главная</a>
+                <a href="#">Новости</a>
+                <a href="#">Квартиры</a>
+                <a href="#" class="activePage">3D экскурсия</a>
+            </div>
         </nav>
+        <label class="burger-btn__header" id="toggleMenu">
+            <span></span>
+        </label>
     </header>
 
     <section class="home">
@@ -26,6 +32,7 @@
 
     <script defer src="js/lib/three.min.js"></script>
     <script defer src="js/lib/panolens.min.js"></script>
+    <script defer src="js/controlPano.js"></script>
     <script defer src="js/app.js"></script>
 </body>
 
